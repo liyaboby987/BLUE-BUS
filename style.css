@@ -1,0 +1,117 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #4e73df, #1cc88a);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main Card Container */
+.container {
+    width: 95%;
+    max-width: 600px;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+/* Headings */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+h3 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+/* Form Layout */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Inputs */
+input {
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #4e73df;
+    outline: none;
+    box-shadow: 0 0 8px rgba(78,115,223,0.2);
+}
+
+/* Button */
+button {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background: #4e73df;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #2e59d9;
+    transform: translateY(-2px);
+}
+
+/* Bus List */
+#busList {
+    margin-top: 10px;
+}
+
+/* Bus Card */
+#busList > div {
+    background: #f8f9fc;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    border-left: 5px solid #4e73df;
+    transition: 0.3s;
+}
+
+#busList > div:hover {
+    background: #eef2ff;
+    transform: scale(1.02);
+}
+
+/* Bus Text */
+#busList h3 {
+    margin-bottom: 5px;
+    color: #4e73df;
+}
+
+#busList p {
+    font-size: 14px;
+    color: #555;
+    margin: 3px 0;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    .container {
+        padding: 20px;
+    }
+}
